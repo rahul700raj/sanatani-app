@@ -1,0 +1,142 @@
+.profile-page {
+  max-width: 1200px;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.profile-sidebar {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  margin: 0 auto 20px;
+}
+
+.profile-sidebar h3 {
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.batch-id {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat strong {
+  font-size: 24px;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.stat span {
+  font-size: 12px;
+  color: #666;
+}
+
+.profile-main {
+  padding: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-header h3 {
+  color: var(--dark);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.form-group input:disabled {
+  background: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.achievements {
+  padding: 30px;
+}
+
+.achievements h3 {
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.achievement-badge {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.achievement-badge:hover {
+  transform: translateY(-5px);
+  background: #fff5e6;
+}
+
+.badge-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.achievement-badge p {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+  }
+  .achievement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
